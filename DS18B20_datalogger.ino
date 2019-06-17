@@ -11,11 +11,11 @@
 
  
 OneWire oneWire(ONE_WIRE_BUS);//SSID and Password of your WiFi router
-const char* ssid = "Redmi 5";
-const char* password = "asdfghjkl";
+const char* ssid = "Redmi 5"; //Your wifi Hotspot name
+const char* password = "asdfghjkl"; //password of the wifi
 
 DallasTemperature sensors(&oneWire);
-DeviceAddress sensor1 = { 0x28, 0x4F, 0xCE, 0x79, 0x97, 0x6, 0x3, 0xEE };
+DeviceAddress sensor1 = { 0x28, 0x4F, 0xCE, 0x79, 0x97, 0x6, 0x3, 0xEE }; //Address of sensor
 
  
 WebServer server(80); //Server on port 80
